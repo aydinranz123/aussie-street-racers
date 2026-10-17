@@ -1,5 +1,7 @@
-# Aussie Street Racers v0.3
+# Aussie Street Racers v0.4
 
-Mobile 3D free-roam racing prototype. Changes: corrected left/right steering by fixing the vehicle heading sign, added DRIFT handbrake and CAM alternate chase camera. Garage and saved progress remain compatible with v0.2.
+Free roam update: improved sedan shape, highway, petrol station, car dealership, optional synthesized engine audio, mobile controls, garage and checkpoint race.
 
-Upload `index.html` to the root of your GitHub repository, replacing the old file. Commit, wait for GitHub Pages, then close/reopen the game or refresh Safari to avoid cached code. Requires an internet connection to load Three.js.
+Upload `index.html` to the root of your existing GitHub Pages repository, replacing the previous file. Refresh or close/reopen the home-screen app. Internet connection required for Three.js CDN.
+
+Cars are unlicensed stylised approximations. Engine audio is synthesized, not an actual Barra recording.
