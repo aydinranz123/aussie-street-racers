@@ -1,25 +1,31 @@
-# Aussie Street Racers — Prototype v0.1
+# Aussie Street Racers — v0.2
 
-A mobile-first 3D browser game, featuring an original BA Falcon XR6-inspired sedan (not a licensed Ford model), 2-lap race against an AI rival, touchscreen driving controls, garage paint and engine upgrades, and saved in-game cash.
+Mobile-first, playable 3D browser racing prototype with fictional Australian-inspired performance cars and city.
 
-## Run on a computer
-1. Install Python 3 if needed.
-2. Open a terminal in the folder containing `index.html`.
-3. Run `python -m http.server 8000` (or `python3 -m http.server 8000`).
-4. Visit http://localhost:8000 in Chrome, Safari, or Edge.
+## What's new
+- Free roam in a grid-based fictional Queensland-inspired city, with buildings, parks, lighting, and moving AI traffic.
+- Six Australian-inspired vehicles: BA XR6, BF XR6 Turbo, FG XR6 Turbo, VE SS, AU XR8 and a V8 club sedan.
+- Redesigned garage with car purchasing, paint, engine tuning and saved progress.
+- Touchscreen steering, throttle and brake, plus keyboard WASD / arrow controls.
+- A simple four-checkpoint circuit race, rewards, and minimap.
 
-## Run on iPhone or Android
-1. Host `index.html` on any HTTPS static hosting service, e.g. GitHub Pages, Netlify, or Cloudflare Pages.
-2. Open the HTTPS address in Safari or Chrome on your phone.
-3. Optionally use Add to Home Screen in the browser's share menu.
-
-You can also test from a phone on the same Wi-Fi as your computer by visiting `http://COMPUTER-LAN-IP:8000`, provided the computer firewall permits it. HTTPS hosting is generally more reliable.
+## Publish on GitHub Pages
+1. Open your `aussie-street-racers` repository.
+2. Replace the root `index.html` with the `index.html` in this folder; replace `README.md` too.
+3. Commit changes to the `main` branch.
+4. Under Settings > Pages, choose Deploy from a branch > `main` > `/ (root)` and Save.
+5. Wait for deployment and open `https://YOUR-USERNAME.github.io/aussie-street-racers/`.
 
 ## Controls
-Touch ◀ ▶ to steer; hold GO to accelerate; BRAKE to decelerate. On keyboard use arrows or WASD. Open GARAGE to pause. Engine tunes cost in-game cash, earned after races.
+- Phone: on-screen left/right, GO and BRAKE buttons.
+- Desktop: WASD or arrow keys.
+- MENU switches between free roam and a circuit race.
+- GARAGE allows buying cars, changing paint and engine tuning.
 
-## Technical notes
-Uses Three.js 0.160.1 imported from jsDelivr CDN. Internet access is required to load the engine. No backend, account, payments, real-world street racing, or multiplayer. Race circuit is fictional and closed. This is a lightweight prototype, not a native Android APK or iOS IPA, and the car is a stylized approximation rather than a licensed 3D scan. Engine upgrades and race results are saved in localStorage.
-
-## Next steps
-Replace primitive car with an appropriately licensed glTF model; add physical steering/handling, collisions, opponent racing AI, lap timing, audio, garage camera, and a native wrapper (Capacitor) for app-store distribution.
+## Notes and limitations
+- Internet connection required for the Three.js module hosted on jsDelivr.
+- Models are stylized, original approximations; no official Ford/Holden assets or licensing.
+- Traffic is simple moving AI and may cross intersections without full traffic rules.
+- Physics and collision are arcade-style; buildings are scenery, not fully collidable.
+- Racing is a fictional closed-course game experience; this is not a production-ready native mobile app.
+- Progress uses localStorage on each device/browser. v0.1 saves are not migrated automatically.
